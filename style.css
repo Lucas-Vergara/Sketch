@@ -1,0 +1,32 @@
+:root {
+    --size: 16;
+    --grey: grey;
+}
+
+
+#grid {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(var(--size) , 1fr);
+    box-sizing: content-box;
+    height: 500px;
+    width:  500px;
+}
+.square {
+    border: 1px solid black;
+    height: calc(500px/var(--size));
+    width: calc(500px/var(--size));
+    --hover: 0;
+}
+
+#container {
+    margin-left: 100px;
+}
+
+#greyButton {
+    background-color: lightblue;
+}
+
+#colorButton {
+    background-color: lightblue;
+}

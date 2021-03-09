@@ -2,30 +2,45 @@
     --size: 16;
 }
 
+body {
+    background-image: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+}
+
 
 #grid {
+    margin: auto;
+    left: 30%;
+    top: 10%;
     position: absolute;
     display: grid;
     grid-template-columns: repeat(var(--size) , 1fr);
     box-sizing: content-box;
-    height: 500px;
-    width:  500px;
+    background-color: white;
+    cursor: crosshair;
+
 }
 .square {
-    border: 1px solid black;
+    border: calc(20px/var(--size)) solid black;
     height: calc(500px/var(--size));
     width: calc(500px/var(--size));
     --hover: 0;
 }
 
-#container {
-    margin-left: 100px;
-}
+
 
 #greyButton {
     background-color: lightblue;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-top: 70px
 }
 
 #colorButton {
     background-color: lightblue;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px 20px
 }
